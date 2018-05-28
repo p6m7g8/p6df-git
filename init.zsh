@@ -19,6 +19,8 @@ p6df::modules::git::external::brew() {
 
 p6df::modules::git::init() {
 
+  alias g=git
+
   p6df::modules::git::prompt
 }
 
