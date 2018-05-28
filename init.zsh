@@ -48,5 +48,3 @@ p6df::prompt::git::line() {
    echo "git:\t$org/$repo @ $shortsha ($branch)"
  fi
 }
-
-p6df::modules::git::init
