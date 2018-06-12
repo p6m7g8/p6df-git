@@ -36,8 +36,8 @@ p6df::modules::git::prompt_precmd() {
 p6df::modules::git::vcs_info() {
   
   if git rev-parse --is-inside-work-tree &> /dev/null; then
-    org=ORG
-    repo=REPO
+    org=$(p6_git_org_org_get)
+    repo=$(p6_git_org_repo_get)
     shortsha=$(p6_git_sha_short_get)
     branch=$(p6_git_branch_get)
 #    status=$(p6_git_dirty_get)
