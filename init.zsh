@@ -17,6 +17,11 @@ p6df::modules::git::external::brew() {
   git lfs install
 }
 
+p6df::modules::git::home::symlink() {
+
+  # XXX: .gitconfig
+}
+
 p6df::modules::git::init() {
 
   alias g=git
