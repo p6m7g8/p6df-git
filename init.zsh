@@ -20,6 +20,7 @@ p6df::modules::git::external::brew() {
 p6df::modules::git::home::symlink() {
 
   # XXX: .gitconfig
+  true;
 }
 
 p6df::modules::git::init() {
