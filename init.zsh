@@ -8,7 +8,7 @@ p6df::modules::git::deps()    {
 
 p6df::modules::git::external::brew() {
 
-  brew install git --without-completions
+  brew install git
   brew install git-extras
   brew install git-lfs
   brew install git-quick-stats
