@@ -40,7 +40,7 @@ p6df::modules::git::prompt_precmd() {
 }
 
 p6df::modules::git::vcs_info() {
-  
+
   if git rev-parse --is-inside-work-tree &> /dev/null; then
     org=$(p6_git_org_org_get)
     repo=$(p6_git_org_repo_get)
