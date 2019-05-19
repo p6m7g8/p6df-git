@@ -19,13 +19,11 @@ p6df::modules::git::external::brew() {
 
 p6df::modules::git::home::symlink() {
 
-  # XXX: .gitconfig
-  true;
+    ln -fs $P6_DFZ_SRC_P6M7G8_DIR/p6df-git/share/.gitconfig .gitconfig
+    ln -fs $P6_DFZ_SRC_P6M7G8_DIR/p6df-git/share/.gitignore_global .gitignore_global
 }
 
 p6df::modules::git::init() {
-
-  alias g=git
 
   p6df::modules::git::prompt
 }
