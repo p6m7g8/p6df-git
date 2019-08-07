@@ -183,6 +183,7 @@
 
 [hub]
 	host = github.com
+	protocol = https
 [credential]
 	helper = osxkeychain
 [filter "lfs"]

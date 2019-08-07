@@ -34,23 +34,23 @@ p6df::modules::git::prompt() {
 }
 
 p6df::modules::git::prompt_precmd() {
-  p6df::modules::git::vcs_info
+  p6df::modules::git::vcs_info 
 }
 
 p6df::modules::git::vcs_info() {
-
+  
   if git rev-parse --is-inside-work-tree &> /dev/null; then
-    org=$(p6_git_org_org_get)
-    repo=$(p6_git_org_repo_get)
-    shortsha=$(p6_git_sha_short_get)
-    branch=$(p6_git_branch_get)
-#    status=$(p6_git_dirty_get)
+    g_org=$(p6_git_org_org_get)
+    g_repo=$(p6_git_org_repo_get)
+    g_shortsha=$(p6_git_sha_short_get)
+    g_branch=$(p6_git_branch_get)
+#    g_status=$(p6_git_dirty_get)
   fi
 }
 
 p6df::prompt::git::line() {
 
  if git rev-parse --is-inside-work-tree &> /dev/null; then
-   echo "git:\t$org/$repo @ $shortsha ($branch)"
+   echo "git:\t$g_org/$g_repo @ $g_shortsha ($g_branch)"
  fi
 }
