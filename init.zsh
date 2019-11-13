@@ -14,6 +14,8 @@ p6df::modules::git::external::brew() {
   brew install git-quick-stats
   brew install git-secret
 
+  brew install tig
+
   git lfs install
 }
 
