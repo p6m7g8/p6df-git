@@ -52,7 +52,15 @@ p6df::modules::git::vcs_info() {
 
 p6df::prompt::git::line() {
 
+    p6_git_prompt_info
+}
+
+p6_git_prompt_info() {
+
+    local str
     if p6_git_inside_tree; then
-	echo "git:\t$g_org/$g_repo @ $g_shortsha ($g_branch) $g_status"
+	str="git:\t$g_org/$g_repo @ $g_shortsha ($g_branch) $g_status"
     fi
+
+    p6_return_str "$str"
 }
