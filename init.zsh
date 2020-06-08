@@ -89,6 +89,7 @@ p6df::modules::git::aliases::init() {
   alias ga='p6_git_p6_add'
   alias ga='p6_git_p6_add_all'
   alias gb='p6_git_p6_branch'
+  alias gC='p6_github_cli_submit'
   alias gc='p6_git_p6_clone'
   alias gc='p6_git_p6_commit'
   alias gcb='p6_git_p6_branch_create'
