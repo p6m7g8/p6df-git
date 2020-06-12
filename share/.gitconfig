@@ -1,7 +1,7 @@
 # core {{{
 [core]
-    editor = /usr/bin/vim
-    excludesfile = /Users/pgolucci/.gitignore_global
+    editor = /usr/local/bin/code
+    excludesfile = /Users/philip.gollucci/.gitignore_global
     pager=cat
 
 #}}}
@@ -66,16 +66,15 @@
 [mergetool "ediff"]
   cmd = emacsclient -c -a \"\"  --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\")\"
 
-[hub]
-	host = github.com
-	protocol = https
 [credential]
 	helper = osxkeychain
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
 [secrets]
 	providers = git secrets --aws-provider
 	patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
