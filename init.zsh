@@ -1,3 +1,4 @@
+# shellcheck shell=zsh
 ######################################################################
 #<
 #
@@ -5,7 +6,9 @@
 #
 #>
 ######################################################################
-p6df::modules::git::version() { echo "0.0.1" }
+p6df::modules::git::version() {
+  echo "0.0.1"
+}
 ######################################################################
 #<
 #
@@ -13,11 +16,11 @@ p6df::modules::git::version() { echo "0.0.1" }
 #
 #>
 ######################################################################
-p6df::modules::git::deps()    {
-	ModuleDeps=(
-		sorin-ionescu/prezto:modules/git
-		p6m7g8/p6git
-	)
+p6df::modules::git::deps() {
+  ModuleDeps=(
+    sorin-ionescu/prezto:modules/git
+    p6m7g8/p6git
+  )
 }
 
 ######################################################################
@@ -51,8 +54,8 @@ p6df::modules::git::external::brew() {
 ######################################################################
 p6df::modules::git::home::symlink() {
 
-    ln -fs $P6_DFZ_SRC_P6M7G8_DIR/p6df-git/share/.gitconfig .gitconfig
-    ln -fs $P6_DFZ_SRC_P6M7G8_DIR/p6df-git/share/.gitignore_global .gitignore_global
+  ln -fs $P6_DFZ_SRC_P6M7G8_DIR/p6df-git/share/.gitconfig .gitconfig
+  ln -fs $P6_DFZ_SRC_P6M7G8_DIR/p6df-git/share/.gitignore_global .gitignore_global
 }
 
 ######################################################################
@@ -87,7 +90,7 @@ p6df::modules::git::aliases::init() {
   ## my aliases (finally!)
   alias g='p6_git_cmd'
   alias ga='p6_git_p6_add'
-  alias ga='p6_git_p6_add_all'
+  alias gA='p6_git_p6_add_all'
   alias gb='p6_git_p6_branch'
   alias gC='p6_github_cli_submit'
   alias gc='p6_git_p6_clone'
@@ -106,6 +109,7 @@ p6df::modules::git::aliases::init() {
   alias gp='p6_git_p6_pull'
   alias gP='p6_git_p6_push'
   alias gPt='p6_git_p6_push_tags'
+  alias gR='p6_git_p6_restore'
   alias gr='p6_git_p6_revert'
   alias gs='p6_git_p6_status'
   alias gS='p6_git_p6_sync'
@@ -143,13 +147,13 @@ p6df::modules::git::prompt_precmd() {
 ######################################################################
 p6df::modules::git::vcs_info() {
 
-    if p6_git_inside_tree; then
-	g_org=$(p6_git_org_org_get)
-	g_repo=$(p6_git_org_repo_get)
-	g_shortsha=$(p6_git_sha_short_get)
-	g_branch=$(p6_git_branch_get)
-	g_status=$(p6_git_dirty_get)
-    fi
+  if p6_git_inside_tree; then
+    g_org=$(p6_git_org_org_get)
+    g_repo=$(p6_git_org_repo_get)
+    g_shortsha=$(p6_git_sha_short_get)
+    g_branch=$(p6_git_branch_get)
+    g_status=$(p6_git_dirty_get)
+  fi
 }
 
 ######################################################################
@@ -161,7 +165,7 @@ p6df::modules::git::vcs_info() {
 ######################################################################
 p6df::prompt::git::line() {
 
-    p6_git_prompt_info
+  p6_git_prompt_info
 }
 
 ######################################################################
@@ -176,10 +180,10 @@ p6df::prompt::git::line() {
 ######################################################################
 p6_git_prompt_info() {
 
-    local str
-    if p6_git_inside_tree; then
-	str="git:\t$g_org/$g_repo @ $g_shortsha ($g_branch) $g_status"
-    fi
+  local str
+  if p6_git_inside_tree; then
+    str="git:\t$g_org/$g_repo @ $g_shortsha ($g_branch) $g_status"
+  fi
 
-    p6_return_str "$str"
+  p6_return_str "$str"
 }
