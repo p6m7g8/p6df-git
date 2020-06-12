@@ -1,6 +1,6 @@
 # core {{{
 [core]
-    editor = /usr/local/bin/code
+    editor = /usr/local/bin/emacs
     excludesfile = /Users/philip.gollucci/.gitignore_global
     pager=cat
 
