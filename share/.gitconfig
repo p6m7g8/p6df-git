@@ -1,6 +1,6 @@
 # core {{{
 [core]
-    editor = /usr/local/bin/code
+    editor = /usr/local/bin/vim
     excludesfile = /Users/philip.gollucci/.gitignore_global
     pager=cat
 
