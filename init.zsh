@@ -182,7 +182,7 @@ p6_git_prompt_info() {
 
   local str
   if p6_git_inside_tree; then
-    str="git:\t$g_org/$g_repo @ $g_shortsha ($g_branch) $g_status"
+    str="git:\t  $g_org/$g_repo @ $g_shortsha ($g_branch) $g_status"
   fi
 
   p6_return_str "$str"
