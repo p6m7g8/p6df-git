@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/p6m7g8/p6df-git/compare/v1.0.0...v1.0.1) (2020-09-20)
+
+
+### Features
+
+* **aliases:** adds gC -> p6_github_cli_submit() ([#8](https://github.com/p6m7g8/p6df-git/issues/8)) ([98f4e23](https://github.com/p6m7g8/p6df-git/commit/98f4e232eb24b20851b0a25503069bb1b6c7b3e6))
+* **pull:** default to --ff-only ([#13](https://github.com/p6m7g8/p6df-git/issues/13)) ([7494af7](https://github.com/p6m7g8/p6df-git/commit/7494af705330b19ebe3723080287785f46494dfb))
+
+
+### Bug Fixes
+
+* **alias:** ga->gA to deconflict, += gR for restore ([#9](https://github.com/p6m7g8/p6df-git/issues/9)) ([e717a56](https://github.com/p6m7g8/p6df-git/commit/e717a566e26a585ad9824aefec0dc1f2f9e04c72))
+* **editor:** back to vim ([#12](https://github.com/p6m7g8/p6df-git/issues/12)) ([e25451a](https://github.com/p6m7g8/p6df-git/commit/e25451a4d3c62420de69f5f1a4ef379c157a0f59))
+* **gitconfig:** vim->emacs, pgollucci->philip.gollucci, -= [hub] ([#10](https://github.com/p6m7g8/p6df-git/issues/10)) ([361a4a1](https://github.com/p6m7g8/p6df-git/commit/361a4a12f9e1de38e5eb9a42bed24ffe5e9dea41))
+
+
+* **prompt:** indents more ([#14](https://github.com/p6m7g8/p6df-git/issues/14)) ([1e2038c](https://github.com/p6m7g8/p6df-git/commit/1e2038cafe86cfc443ef47b7bea63ea45b97231c))
+
 ## 1.0.0 (2020-06-07)
 
 
