@@ -153,17 +153,23 @@ p6df::modules::git::vcs_info() {
     g_shortsha=$(p6_git_sha_short_get)
     g_branch=$(p6_git_branch_get)
     g_status=$(p6_git_dirty_get)
+  else
+    unset g_org
+    unset g_repo
+    unset g_shortsha
+    unset g_branch
+    unset g_status
   fi
 }
 
 ######################################################################
 #<
 #
-# Function: p6df::prompt::git::line()
+# Function: p6df::modules::git::prompt::line()
 #
 #>
 ######################################################################
-p6df::prompt::git::line() {
+p6df::modules::git::prompt::line() {
 
   p6_git_prompt_info
 }
@@ -181,8 +187,8 @@ p6df::prompt::git::line() {
 p6_git_prompt_info() {
 
   local str
-  if p6_git_inside_tree; then
-    str="git:\t  $g_org/$g_repo @ $g_shortsha ($g_branch) $g_status"
+  if ! p6_string_blank "$g_org"; then
+    str="git:\t  $g_org/$g_repo @ $g_shortsha ($g_branch) [$g_status]"
   fi
 
   p6_return_str "$str"
