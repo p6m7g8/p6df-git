@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/p6m7g8/p6df-git/compare/v1.0.1...v2.0.0) (2020-10-11)
+
+
+### Bug Fixes
+
+* **prompt:** remove one `git` fork/exec ([#15](https://github.com/p6m7g8/p6df-git/issues/15)) ([cd75090](https://github.com/p6m7g8/p6df-git/commit/cd750908dc49ea959ae52a13d58181f799bd5551))
+
 ### [1.0.1](https://github.com/p6m7g8/p6df-git/compare/v1.0.0...v1.0.1) (2020-09-20)
 
 
