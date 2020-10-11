@@ -8,6 +8,5 @@
 - p6df::modules::git::prompt::line()
 - p6df::modules::git::prompt_precmd()
 - p6df::modules::git::vcs_info()
-- p6df::modules::git::version()
 - str str = p6_git_prompt_info()
 
