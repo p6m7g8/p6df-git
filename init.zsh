@@ -104,6 +104,7 @@ p6df::modules::git::aliases::init() {
   alias gr='p6_git_p6_revert'
   alias gs='p6_git_p6_status'
   alias gS='p6_git_p6_sync'
+  alias gU='p6_git_p6_update'
 }
 
 ######################################################################
