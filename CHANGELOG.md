@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/p6m7g8/p6df-git/compare/v2.0.0...v2.1.0) (2020-12-06)
+
+
+### Features
+
+* **alias:** gU='p6_git_p6_update' ([#18](https://github.com/p6m7g8/p6df-git/issues/18)) ([971eea8](https://github.com/p6m7g8/p6df-git/commit/971eea84f0f60358b05b55975d01d1e5eeaa6f34))
+* **aliases:** new aliases ([#20](https://github.com/p6m7g8/p6df-git/issues/20)) ([dd1d0e3](https://github.com/p6m7g8/p6df-git/commit/dd1d0e34549489fbb3edca10401fff20079e6d26))
+* **api:** centralize ::version() ([4a228ff](https://github.com/p6m7g8/p6df-git/commit/4a228ff10bca0e52b59e9b6c7b7cd8b0e507abde))
+* **community:** adds CODE_OF_CONDUCT ([3327599](https://github.com/p6m7g8/p6df-git/commit/332759993824388fa8f4f4ab882918771507811e))
+* **github:** adds ISSUE_TEMPLATEs ([03010b8](https://github.com/p6m7g8/p6df-git/commit/03010b82c021ceb774781b3291ecbee0493c9da1))
+
+
+### Bug Fixes
+
+* **init:** fix left over merge ([#17](https://github.com/p6m7g8/p6df-git/issues/17)) ([5491f6d](https://github.com/p6m7g8/p6df-git/commit/5491f6ddbe23ef1a4d6a838a4c6982a9e902abe6))
+
+
+* **community:** rely on the .github/ in the org ([#26](https://github.com/p6m7g8/p6df-git/issues/26)) ([beac974](https://github.com/p6m7g8/p6df-git/commit/beac97473f15fb5e6c6a988e4d649561668d45b1))
+* **docs:** fixes whitespace ([9c09e3e](https://github.com/p6m7g8/p6df-git/commit/9c09e3e363c7248e0f38f67b55cc13757bdbb3eb))
+* **README:** fixes module expansion, adds CodeCov and Synk badges ([#27](https://github.com/p6m7g8/p6df-git/issues/27)) ([0998793](https://github.com/p6m7g8/p6df-git/commit/0998793cd170593977e9528ac31ba71444d448a3))
+* **README:** updates to template v2.0 ([e9935cf](https://github.com/p6m7g8/p6df-git/commit/e9935cf57e224f570e6e865b7a336ad6e1c86611))
+* **semantic:** no longer needed, defaults are fine ([69634a2](https://github.com/p6m7g8/p6df-git/commit/69634a222c14dbdd3629abf6e06afe94fbda24a0))
+
 ## [2.0.0](https://github.com/p6m7g8/p6df-git/compare/v1.0.1...v2.0.0) (2020-10-11)
 
 
