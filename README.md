@@ -38,9 +38,11 @@
 
 - [Change Log](CHANGELOG.md)
 
-### Usage
+## Usage
 
-#### init.zsh:
+### p6df-git:
+
+#### p6df-git/init.zsh:
 
 - p6df::modules::git::aliases::init()
 - p6df::modules::git::deps()
