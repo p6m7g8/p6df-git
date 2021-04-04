@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/p6m7g8/p6df-git/compare/v2.1.0...v2.1.1) (2021-04-04)
+
+
+### Features
+
+* **aliases:** m->d, master->default ([#29](https://github.com/p6m7g8/p6df-git/issues/29)) ([168e98f](https://github.com/p6m7g8/p6df-git/commit/168e98f6eaf590439ea17298303d9458326a80fa))
+* **deps:** adds `gr` ([#30](https://github.com/p6m7g8/p6df-git/issues/30)) ([3d3a172](https://github.com/p6m7g8/p6df-git/commit/3d3a172771acb7610581278f91ed8c4f5b483901))
+
+
+* **README:** updates generator ([#31](https://github.com/p6m7g8/p6df-git/issues/31)) ([485f4d0](https://github.com/p6m7g8/p6df-git/commit/485f4d0221b2717815de738f2cf3d9a13566702f))
+* Coc -> .github ([6b80fe3](https://github.com/p6m7g8/p6df-git/commit/6b80fe3570b675ac8d5d4f52a5f7433927c2e52f))
+* **alias:** tracks function rename ([#28](https://github.com/p6m7g8/p6df-git/issues/28)) ([bb99217](https://github.com/p6m7g8/p6df-git/commit/bb992171a8c0bb236fee560781309071cbcd649c))
+
 ## [2.1.0](https://github.com/p6m7g8/p6df-git/compare/v2.0.0...v2.1.0) (2020-12-06)
 
 
