@@ -2,7 +2,7 @@
 [core]
     editor = /usr/local/bin/vim
     excludesfile = /Users/philip.gollucci/.gitignore_global
-    pager=cat
+    pager=delta
 
 #}}}
 # user {{{
@@ -61,12 +61,6 @@
 [remote "origin"]
   fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
 
-[merge]
-  tool = ediff
-
-[mergetool "ediff"]
-  cmd = emacsclient -c -a \"\"  --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\")\"
-
 [credential]
 	helper = osxkeychain
 
@@ -83,3 +77,15 @@
 	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    features = side-by-side line-numbers decorations
+    whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none

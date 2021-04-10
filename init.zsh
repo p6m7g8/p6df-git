@@ -24,6 +24,7 @@ p6df::modules::git::deps() {
 p6df::modules::git::external::brew() {
 
   brew install git
+  brew install git-delta
   brew install git-extras
   brew install git-lfs
   brew install git-quick-stats
